@@ -24,6 +24,15 @@ img {
     height: auto;
 }
 
+body {
+    font-family: var(--primary-text-font);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-black-text);
+}
+
 .link {
     text-decoration: none;
     cursor: pointer;
