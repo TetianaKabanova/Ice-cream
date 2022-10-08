@@ -1,0 +1,69 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 42px;
+}
+
+.about__label {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-text);
+}
+
+.about__title {
+  margin-bottom: 32px;
+
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-text);
+}
+
+.about__img-box {
+  background-color: red;
+}
+
+.about__img {
+  position: relative;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 62px;
+  width: 278px;
+  height: 300px;
+
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+}
+
+.about__img::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 0;
+  transform: translate(-50% -50%);
+
+  display: inline-block;
+  width: 278px;
+  height: 278px;
+
+  border-radius: 50%;
+  background-image: url(../images/mobile/gallery-section-ice-cream_mobile-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  overflow: hidden;
+}
