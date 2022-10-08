@@ -1,4 +1,18 @@
-.contacts {
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    transition: color var(--transition-dur-and-func);
+}
+
+.list {
+    list-style: none;
+}
+
+.buttoncursor {
+    cursor: pointer;
+}
+
+.contact {
     border: 1px solid orange;
     width: 280px;
     height: 412px;
@@ -10,20 +24,64 @@
 
 .address__title {
     margin-bottom: 20px;
+    display: inline-block;
+    width: 80px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    text-align: center;
 }
 
 .address__location {
+    font-style: normal;
     padding-bottom: 24.01px;
     margin-bottom: 24.01px;
     border-bottom: 1px solid var(--line-grey);
 }
 
 .address__city {
-    margin-bottom: 8px;
+    margin-bottom: 8px;    
+    font-size: 12px;
+    line-height: calc(22/12);       
+    color: var(--primary-black-text);
 }
 
-// .address__map {
-//     margin-bottom: 48.01px;
-// }
+.address__map {
+    font-size: 12px;
+    line-height: calc(22/12);    
+    color: var(--product-bg-brown);
+}
+
+.address__schedule {
+    font-style: normal;
+    padding-bottom: 24.01px;
+    margin-bottom: 24.01px;
+    border-bottom: 1px solid var(--line-grey);
+}
+
+.address__day {        
+    font-size: 12px;
+    line-height: calc(22/12);
+    color: var(--primary-black-text);
+}
+
+.address__time {    
+    font-size: 12px;
+    line-height: calc(22/12);
+    color: var(--contact-grey);
+}
+
+.address__cont {
+    font-style: normal;
+}
+
+.address__tel,
+.address__mail {
+    font-size: 12px;
+    line-height:calc(18/12);
+    color: var(--primary-black-text);
+}
+
+
 
 
