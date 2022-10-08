@@ -16,6 +16,7 @@
 
 .about__title {
   margin-bottom: 32px;
+  padding: 0 55px;
 
   font-family: 'Seymour One';
   font-weight: 400;
@@ -61,9 +62,81 @@
   height: 278px;
 
   border-radius: 50%;
-  background-image: url(../images/mobile/gallery-section-ice-cream_mobile-bg.png);
+  background-image: url('../images/mobile/about_cow_mobile.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   overflow: hidden;
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url('../images/mobile/about_cow_mobile@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/tablet/about_cow_tablet.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url('../images/tablet/about_cow_tablet@2x.png');
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/desktop/about_cow_desktop.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url('../images/desktop/about_cow_desktop@2x.png');
+  }
+}
+
+.about__list {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.about__item:nth-child(1) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 4px;
+  }
+}
+
+.about__item_hidden {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.75;
+  text-align: center;
+  color: var(--primary-white-text);
+}
+
+.about__button {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 164px;
+  height: 42px;
+
+  background-color: #f8d24e;
+  border: none;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: var(--primary-black-text);
 }
