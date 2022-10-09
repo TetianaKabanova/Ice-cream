@@ -1,6 +1,9 @@
 .about {
   padding-top: 60px;
   padding-bottom: 42px;
+  @media screen and (min-width: 48px) {
+    padding-bottom: 48px;
+  }
 }
 
 .about__label {
@@ -16,7 +19,7 @@
 
 .about__title {
   margin-bottom: 32px;
-  padding: 0 55px;
+  padding: 0 40px;
 
   font-family: 'Seymour One';
   font-weight: 400;
@@ -48,6 +51,11 @@
     ),
     #d9d9d9;
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    width: 336px;
+    height: 355px;
+  }
 }
 
 .about__img::after {
@@ -75,6 +83,10 @@
   }
 
   @media screen and (min-width: 768px) {
+    top: 25px;
+
+    width: 335px;
+    height: 330px;
     background-image: url('../images/tablet/about_cow_tablet.png');
   }
 
@@ -95,15 +107,35 @@
   }
 }
 
+.about__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
+  }
+}
+
 .about__list {
+  margin-bottom: 20px;
   padding-right: 30px;
   padding-left: 30px;
-  padding-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-top: 7px;
+    margin-bottom: 48px;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .about__item:nth-child(1) {
   @media screen and (max-width: 767px) {
     margin-bottom: 4px;
+  }
+}
+
+.about__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
   }
 }
 
@@ -113,18 +145,29 @@
   }
 }
 
+.about__item:last-child .about__text {
+  line-height: 1.58;
+  @media screen and (min-width: 768px) {
+    line-height: 1.92;
+  }
+}
+
 .about__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.75;
   text-align: center;
   color: var(--primary-white-text);
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .about__button {
-  display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
   width: 164px;
@@ -135,8 +178,13 @@
   border-radius: 10px;
 
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.29;
   text-align: center;
   color: var(--primary-black-text);
+}
+
+.about__icon {
+  margin-left: 5px;
+  width: 12px;
+  height: 12px;
 }
