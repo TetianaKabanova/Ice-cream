@@ -1,7 +1,43 @@
 <header class="page-header">
   <div class="container page-header__container">
-    <a href="./index.html">
-      <img src="./images/ice-cream-logo.png" alt="ice-cream-logo" />
+    <a class="logo" href="./index.html">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/logo-desktop.webp    1x,
+            ./images/desktop/logo-desktop@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="imgage/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/logo-desktop.png    1x,
+            ./images/desktop/logo-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/logo-mobile.webp    1x,
+            ./images/mobile/logo-mobile@2x.webp 2x
+          "
+          media="(max-width: 1199px)"
+          type="imgage/webp"
+        />
+        <source
+          srcset="
+            ./images/mobile/logo-mobile.png    1x,
+            ./images/mobile/logo-mobile@2x.png 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <img
+          class="logo__img"
+          src="./images/mobile/logo-mobile.png"
+          alt="ice-cream-logo"
+        />
+      </picture>
     </a>
     <nav class="site-nav">
       <ul class="site-nav__list list">
@@ -18,36 +54,49 @@
           <a class="site-nav__link link" href="#contact">Contact</a>
         </li>
       </ul>
-      <button type="button" class="page-header__modal-btn">
-        Buy Now
-        <svg aria-label="more-sign" width="12" height="12">
-          <use href="./images/sprite.svg#icon-more-sign"></use>
-        </svg>
-      </button>
     </nav>
+    <button type="button" class="page-header__modal-btn">
+      Buy Now
+      <svg
+        aria-label="more-sign"
+        class="page-header__modal-btn--icon"
+        width="12"
+        height="12"
+      >
+        <use href="./images/sprite.svg#icon-more-sign"></use>
+      </svg>
+    </button>
     <button class="mobile-menu-btn">
       <svg class="mobile-menu-btn__icon" width="32" height="32">
         <use href="./images/sprite.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
-  <div class="hero-container">
-    <h1 class="hero-title title">ice cream made with passion</h1>
-    <div>
-      <p>16</p>
-      <p>cafes</p>
-      <p>23</p>
-      <p>food trucks</p>
-    </div>
-    <ul>
+  <div class="hero-container container">
+    <h1 class="hero-title title">
+      ice cream made with <span class="hero-title__item">passion</span>
+    </h1>
+    <ul class="dicription-list list">
       <li>
-        <a href="#our-products">Products</a>
+        <p>16</p>
+        <p>cafes</p>
       </li>
       <li>
-        <a href="#how-its-made">How it’s made?</a>
+        <p>23</p>
+        <p>food trucks</p>
       </li>
     </ul>
-    <p>
+    <ul class="hero-nav-list list">
+      <li class="hero-nav-list__item">
+        <a class="hero-nav-list__link link" href="#our-products">Products</a>
+      </li>
+      <li class="hero-nav-list__item">
+        <a class="hero-nav-list__link link" href="#how-its-made"
+          >How it’s made?</a
+        >
+      </li>
+    </ul>
+    <p class="hero-subtitle">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et
     </p>
