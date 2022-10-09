@@ -1,0 +1,121 @@
+.page-footer {
+  padding: 20px 0;
+  //   background-color: var(--primary-bg-color);
+}
+
+.page-footer__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-white-text);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.page-footer__desk {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-white-text);
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 28px;
+  margin-bottom: 38px;
+}
+
+.social-list__item {
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+
+  &:hover {
+    width: 32px;
+    height: 32px;
+  }
+
+  &:focus {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.social-list__icon {
+  fill: var(--primary-bg-color);
+  transition: fill var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-white-text);
+  }
+}
+
+.page-footer__content_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.page-footer__content_text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-right: 10px;
+}
+
+.page-footer__content_link {
+  color: var(--primary-white-text);
+  font-family: inherit;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.border-line {
+  position: relative;
+  margin-bottom: 16px;
+  width: 100%;
+  height: 1px;
+}
+
+.border-line::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: var(--primary-white-text);
+}
+
+.copyright-text {
+  text-align: center;
+  color: var(--footer-grey);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.mark {
+  display: block;
+}
+
+@media screen and (min-width = 768px) {
+  .mark {
+    display: none;
+  }
+}
