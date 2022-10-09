@@ -70,7 +70,7 @@
 .about__img-box {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 62px;
+  margin-bottom: 40px;
   width: 278px;
   height: 300px;
 
@@ -205,8 +205,22 @@
   }
 }
 
+.about__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.75;
+  text-align: center;
+  color: var(--primary-white-text);
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
 .about__item:last-child .about__text {
-  line-height: 1.58;
   @media screen and (min-width: 768px) {
     line-height: 1.92;
   }
@@ -218,20 +232,12 @@
 }
 
 .about__item:nth-child(2) .about__text {
+  @media screen and (max-width: 767px) {
+    letter-spacing: normal;
+    line-height: 1.58;
+  }
   @media screen and (min-width: 1200px) {
     line-height: 1.92;
-  }
-}
-
-.about__text {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.75;
-  text-align: center;
-  color: var(--primary-white-text);
-
-  @media screen and (min-width: 768px) {
-    text-align: left;
   }
 }
 
