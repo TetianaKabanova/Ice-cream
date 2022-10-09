@@ -1,15 +1,41 @@
-.contact {
-    border: 1px solid orange;
-    // margin-right: 0px;
-    margin-bottom: 20px;
+.address__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 
-    width: 280px;
-    height: 412px;
-    padding: 40.01px 32px;
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        gap: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 32px;
+        }
+    
+} 
+
+.address__card {
+    border: 1px solid orange;
+    padding: 40px 32px;
     background-color: var(--primary-white-text);
     border-radius: 24px;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);        
-}  
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1); 
+    
+    @media screen and (min-width: 320px) {
+        width: 280px;
+        height: 412px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 528px;
+        }
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 538px;
+        }
+        
+}
 
 .address__cafe {
     margin-bottom: 20px;
@@ -41,8 +67,8 @@
 
 .address__location {
     font-style: normal;
-    padding-bottom: 24.01px;
-    margin-bottom: 24.01px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
     border-bottom: 1px solid var(--line-grey);
 }
 
@@ -60,8 +86,8 @@
 
 .address__schedule {
     font-style: normal;
-    padding-bottom: 24.01px;
-    margin-bottom: 24.01px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
     border-bottom: 1px solid var(--line-grey);
 }
 
