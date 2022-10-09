@@ -1,4 +1,103 @@
 .gallery-overlay {
-  background-image: url('./images/mobile/gallery-section__ice-cream_mobile-bg.png');
-  background-repeat: no-repeat;
+  min-height: 940px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(132, 161, 120, 1) 0px 24px,
+    rgba(255, 255, 255, 0.9) 24px 100%
+  );
+
+  /* 
+screen
+2x +
+0px - 767px
+*/
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(132, 161, 120, 1) 0px 24px,
+      rgba(255, 255, 255, 0.9) 24px 100%
+    );
+  }
+
+  /* 
+768px +
+*/
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    min-height: 958px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(132, 161, 120, 1) 0px 164px,
+      rgba(255, 255, 255, 0.9) 164px 100%
+    );
+  }
+
+  /* 
+screen
+2x +
+768px +
+*/
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(132, 161, 120, 1) 0px 164px,
+      rgba(255, 255, 255, 0.9) 164px 100%
+    );
+  }
+
+  /* 
+1200px +
+*/
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    min-height: 1020px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(132, 161, 120, 1) 0px 94px,
+      rgba(255, 255, 255, 0.9) 94px 100%
+    );
+  }
+  /* 
+2x +
+1200px +
+screen
+*/
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(132, 161, 120, 1) 0px 94px,
+      rgba(255, 255, 255, 0.9) 94px 100%
+    );
+  }
 }
+
+// .swiper-wrapper {
+//   align-items: center;
+//   min-width: 0;
+// }
+// .image-slider__image {
+//   align-items: center;
+// }
+
+// .image-slider__image img {
+//   max-width: 100%;
+// }
+
+// .image-slider .swiper-slide {
+//   width: auto;
+// }
+
+// .image-slider .swiper-button-prev::after,
+// .image-slider .swiper-button-next::after {
+//   color: var(--primary-bg-color);
+//   font-size: 50px;
+// }
