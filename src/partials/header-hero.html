@@ -55,6 +55,12 @@
         </li>
       </ul>
     </nav>
+    </button>
+    <button class="mobile-menu-btn js-open-menu">
+      <svg class="mobile-menu-btn__icon">
+        <use href="./images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
     <button type="button" class="page-header__modal-btn">
       Buy Now
       <svg
@@ -65,30 +71,28 @@
       >
         <use href="./images/sprite.svg#icon-more-sign"></use>
       </svg>
-    </button>
-    <button class="mobile-menu-btn">
-      <svg class="mobile-menu-btn__icon" width="32" height="32">
-        <use href="./images/sprite.svg#icon-burger"></use>
-      </svg>
-    </button>
   </div>
   <div class="hero-container container">
-    <h1 class="hero-title title">
-      ice cream made with <span class="hero-title__item">passion</span>
-    </h1>
-    <ul class="dicription-list list">
-      <li>
-        <p>16</p>
-        <p>cafes</p>
-      </li>
-      <li>
-        <p>23</p>
-        <p>food trucks</p>
-      </li>
-    </ul>
+    <div class="hero-container__thumb">
+      <h1 class="hero-title title">
+        ice cream made with <span class="hero-title__item">passion</span>
+      </h1>
+      <ul class="dicription-list list">
+        <li class="dicription-list__item">
+          <p class="dicription-list__item-number">16</p>
+          <p class="dicription-list__item-text">cafes</p>
+        </li>
+        <li class="dicription-list__item">
+          <p class="dicription-list__item-number">23</p>
+          <p class="dicription-list__item-text">food trucks</p>
+        </li>
+      </ul>
+    </div>
     <ul class="hero-nav-list list">
       <li class="hero-nav-list__item">
-        <a class="hero-nav-list__link link" href="#our-products">Products</a>
+        <a class="hero-nav-list__link--btn link" href="#our-products"
+          >Products</a
+        >
       </li>
       <li class="hero-nav-list__item">
         <a class="hero-nav-list__link link" href="#how-its-made"
@@ -100,13 +104,18 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et
     </p>
-    <svg aria-label="icon arrow" width="40" height="14">
+    <svg
+      class="hero-subtitle__icon"
+      aria-label="icon arrow"
+      width="40"
+      height="14"
+    >
       <use href="./images/sprite.svg#icon-arrow"></use>
     </svg>
   </div>
-  <div class="mobile-menu">
+  <div class="mobile-menu js-menu-container">
     <div class="mobile-menu__container">
-      <button class="mobile-menu__close_btn">
+      <button class="mobile-menu__close_btn js-close-menu">
         <svg class="mobile-menu__close-icon" width="32" height="32">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
