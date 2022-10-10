@@ -258,6 +258,13 @@
   line-height: 1.29;
   text-align: center;
   color: var(--primary-black-text);
+
+  cursor: url('../images/cursor.png'), pointer;
+
+  transition: color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+
   @media screen and (min-width: 768px) {
     margin-left: 0;
   }
