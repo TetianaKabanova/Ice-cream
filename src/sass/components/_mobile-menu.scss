@@ -37,6 +37,11 @@
     padding: 0;
     border: 0 solid transparent;
     background-color: var(--primary-bg-color);
+    cursor: pointer;
+}
+
+.mobile-menu__close-icon {
+    fill: var(--primary-white-text);
 }
 
 .mobile-menu-btn__icon,
@@ -55,6 +60,7 @@
     padding: 0;
     border: 0 solid transparent;
     background-color: var(--primary-bg-color);
+    cursor: pointer;
 }
 
 .mobile-menu__link {
@@ -81,6 +87,7 @@
     border: 0 solid transparent;
     border-radius: 10px;
     background-color: var(--accent-color);
+    cursor: pointer;
     transition: background-color var(--transition-dur-and-func);
             
             
