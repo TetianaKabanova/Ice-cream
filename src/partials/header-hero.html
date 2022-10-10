@@ -114,7 +114,46 @@
     </svg>
   </div>
   <div class="mobile-menu js-menu-container">
-    <div class="mobile-menu__container">
+    <div class="mobile-menu__container container">
+      <a class="logo" href="./index.html">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/logo-desktop.webp    1x,
+            ./images/desktop/logo-desktop@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="imgage/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/logo-desktop.png    1x,
+            ./images/desktop/logo-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/logo-mobile.webp    1x,
+            ./images/mobile/logo-mobile@2x.webp 2x
+          "
+          media="(max-width: 1199px)"
+          type="imgage/webp"
+        />
+        <source
+          srcset="
+            ./images/mobile/logo-mobile.png    1x,
+            ./images/mobile/logo-mobile@2x.png 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <img
+          class="logo__img"
+          src="./images/mobile/logo-mobile.png"
+          alt="ice-cream-logo"
+        />
+      </picture>
+    </a>
       <button class="mobile-menu__close_btn js-close-menu">
         <svg class="mobile-menu__close-icon" width="32" height="32">
           <use href="./images/sprite.svg#icon-close"></use>
@@ -138,7 +177,7 @@
           <a class="mobile-menu__link link" href="#contact">Contact</a>
         </li>
       </ul>
-      <button type="button" class="page-header__modal-btn">
+      <button type="button" class="mobile-menu__modal-btn">
         Buy Now
         <svg aria-label="more-sign" width="12" height="12">
           <use href="./images/sprite.svg#icon-more-sign"></use>
