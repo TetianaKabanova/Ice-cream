@@ -1,0 +1,93 @@
+.advantages__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+        }
+}
+.advantages__item {
+    width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 0;
+        width: 152px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 368px;
+    }
+}
+
+.advantages__icon {
+    background-color: var(--secondary-background-color);
+    width: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+}
+
+.advantages__title {
+    font-family: var(--second-text-font);
+    width: 98px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    color: rgba(252, 252, 252, 1);
+
+    @media screen and (min-width: 768px) {
+        width: 152px;
+        font-family: var(--primary-text-font);
+    }
+}
+
+.advantages__text {
+    width: 230px;
+    line-height: 1.7;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.02em;
+    color:rgba(252, 252, 252, 1);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 152px;
+    font-size: 14px;
+    font-weight: 400;
+    }
+    @media screen and (min-width: 1200px) {
+    width: 368px;
+    font-size: 16px;
+    font-weight: 400;
+    }
+}
+.advantages {
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 204px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 180px;
+    }
+}
