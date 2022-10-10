@@ -1,85 +1,85 @@
-.gallery-overlay {
-  // margin-left: auto;
-  // margin-right: auto;
+// .gallery-overlay {
+// margin-left: auto;
+// margin-right: auto;
 
-  background-image: linear-gradient(
-    to bottom,
-    rgba(132, 161, 120, 1) 0px 24px,
-    rgba(255, 255, 255, 0.9) 24px 100%
-  );
+// background-image: linear-gradient(
+//   to bottom,
+//   rgba(132, 161, 120, 1) 0px 24px,
+//   rgba(255, 255, 255, 0.9) 24px 100%
+// );
 
-  /* 
+/* 
 screen
 2x +
 0px - 767px
 */
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(132, 161, 120, 1) 0px 24px,
-      rgba(255, 255, 255, 0.9) 24px 100%
-    );
-  }
+// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//   screen and (min-resolution: 192dpi) and (max-width: 767px),
+//   screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//   background-image: linear-gradient(
+//     to bottom,
+//     rgba(132, 161, 120, 1) 0px 24px,
+//     rgba(255, 255, 255, 0.9) 24px 100%
+//   );
+// }
 
-  /* 
+/* 
 768px +
 */
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(132, 161, 120, 1) 0px 164px,
-      rgba(255, 255, 255, 0.9) 164px 100%
-    );
-  }
+// @media screen and (min-width: 768px) {
+//   background-image: linear-gradient(
+//     to bottom,
+//     rgba(132, 161, 120, 1) 0px 164px,
+//     rgba(255, 255, 255, 0.9) 164px 100%
+//   );
+// }
 
-  /* 
+/* 
 screen
 2x +
 768px +
 */
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(132, 161, 120, 1) 0px 164px,
-      rgba(255, 255, 255, 0.9) 164px 100%
-    );
-  }
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//   screen and (min-resolution: 192dpi) and (min-width: 768px),
+//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//   background-image: linear-gradient(
+//     to bottom,
+//     rgba(132, 161, 120, 1) 0px 164px,
+//     rgba(255, 255, 255, 0.9) 164px 100%
+//   );
+// }
 
-  /* 
+/* 
 1200px +
 */
-  @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(132, 161, 120, 1) 0px 94px,
-      rgba(255, 255, 255, 0.9) 94px 100%
-    );
-  }
-  /* 
+// @media screen and (min-width: 1200px) {
+//   background-image: linear-gradient(
+//     to bottom,
+//     rgba(132, 161, 120, 1) 0px 94px,
+//     rgba(255, 255, 255, 0.9) 94px 100%
+//   );
+// }
+/* 
 2x +
 1200px +
 screen
 */
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(132, 161, 120, 1) 0px 94px,
-      rgba(255, 255, 255, 0.9) 94px 100%
-    );
-  }
-}
+//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//     screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//     background-image: linear-gradient(
+//       to bottom,
+//       rgba(132, 161, 120, 1) 0px 94px,
+//       rgba(255, 255, 255, 0.9) 94px 100%
+//     );
+//   }
+// }
 
 // .swiper-wrapper {
 //   // min-width: 0;
 // }
 
-.image-slider__image picture {
+.image-slider__image {
   width: 100%;
 }
 
@@ -93,12 +93,12 @@ screen
 //   font-size: 50px;
 // }
 
-.image-slider__image {
-  @media screen and (min-width: 768px) {
-    max-width: 704px;
-  }
+// .image-slider__image {
+//   @media screen and (min-width: 768px) {
+//     max-width: 704px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    max-width: 1013px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     max-width: 1013px;
+//   }
+// }
