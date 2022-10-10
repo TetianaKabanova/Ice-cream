@@ -1,5 +1,5 @@
 new Swiper('.image-slider', {
-  autoHeight: true,
+  // autoHeight: true,
 
   // Включено перетаскивание на ПК
   simulateTouch: true,
