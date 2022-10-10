@@ -10,6 +10,47 @@
     height: 42px;
 }
 
+.page-header__modal-btn {
+    text-align: center;
+    width: 152px;
+    height: 42px;
+    border: 0 solid transparent;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    transition: background-color var(--transition-dur-and-func);
+
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+
+    &:hover {
+        background-color: var(--btn-bg-hover);
+    }
+
+    &:focus {
+        background-color: var(--btn-bg-hover);
+        color: var(--primary-white-text);
+        fill: var(--primary-white-text);
+    }
+
+    &:disabled {
+        background-color: var(--contact-grey);
+        pointer-events: none;
+    }
+
+    .dicription-list__item {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+}
+
+.page-header__modal-btn--icon {
+    margin-left: 7px;
+}
+
 .hero-title {
     text-align: start;
     width: 247px;
@@ -52,6 +93,7 @@
 
     border: 2px solid var(--accent-color);
     border-radius: 10px;
+    transition: border-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
 
     &:hover {
         border-color: var(--btn-bg-hover);
@@ -77,6 +119,7 @@
     letter-spacing: 0;
     text-decoration-line: underline;
     color: var(--accent-color);
+    transition: color var(--transition-dur-and-func);
 
     &:hover {
         color: var(--btn-bg-hover);
@@ -263,27 +306,6 @@
         margin-bottom: 56px;
     }
 
-    // .hero-container::after {
-    //     content: '';
-    //     position: absolute;
-    //     width: 257px;
-    //     height: 325px;
-    //     bottom: 0px;
-    //     left: 54%;
-    //     background-image: url('../images/tablet/header-hero_icecream-tablet.png');
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     pointer-events: none;
-    // }
-        
-    // @media screen and (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //     .hero-container::after {
-    //         background-image: url('../images/tablet/header-hero_icecream-tablet@2x.png');
-    //     }
-    // }
-
     .hero-container {
         background-image: url('../images/tablet/header-hero_points-tablet.png'), url('../images/tablet/header-hero_icecream-eyes1.png'), url('../images/tablet/header-hero_icecream-eyes2.png'), url('../images/tablet/header-hero_icecream-eyes3.png'), url('../images/tablet/header-hero_icecream-tablet.png'), url('../images/tablet/header-hero_icecream-shadow-tablet.png');
         background-size: contain, auto, auto, auto, auto, auto;
@@ -329,6 +351,7 @@
         font-size: 16px;
         line-height: 1.25;
         color: var(--modal-bg-white);
+        transition: color var(--transition-dur-and-func);
 
 
         &:hover,
@@ -438,6 +461,9 @@
         background-repeat: no-repeat;
         background-size: contain;
         pointer-events: none;
+        animation-name: Appearance;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(.1,-.6,.2,0);
     }
     
     @media screen and (min-device-pixel-ratio: 2),
@@ -447,64 +473,11 @@
             background-image: url('../images/desktop/header-hero_icecream-desktop@2x.png');
         }
     }
+
+    @keyframes Appearance {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+        
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// =============Btn============
-.page-header__modal-btn {
-    text-align: center;
-    width: 152px;
-    height: 42px;
-    border: 0 solid transparent;
-    border-radius: 10px;
-    background-color: var(--accent-color);
-
-
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-
-    &:hover {
-        background-color: var(--btn-bg-hover);
-    }
-
-    &:focus {
-        background-color: var(--btn-bg-hover);
-        color: var(--primary-white-text);
-        fill: var(--primary-white-text);
-    }
-
-    &:disabled {
-        background-color: var(--contact-grey);
-        pointer-events: none;
-    }
-
-    .dicription-list__item {
-        &:not(:last-child) {
-            margin-bottom: 16px;
-        }
-    }
-
-}
-
-.page-header__modal-btn--icon {
-    margin-left: 7px;
-}
