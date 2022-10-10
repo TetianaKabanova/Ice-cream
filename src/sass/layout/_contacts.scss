@@ -197,6 +197,7 @@
 .address__mail {
     font-size: 12px;
     line-height:calc(18/12);
+    color: var(--primary-black-text);
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
