@@ -1,0 +1,138 @@
+@media screen and (max-width: 767px){
+
+.our-location__modal-map{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    width: 100%;
+    height: 100%;
+}
+.modal-map{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 28px;
+    height:100%;
+    background: var(--primary-white-text);
+    border: 2px solid #F8D24E;
+border-radius: 10px;
+}
+.map-close{
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    border: none;
+    line-height: 0;
+    background: transparent;
+}
+.map-close-icon{
+    width: 16px;
+    height: 16px;
+    
+}
+.text-modal-map{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
+    margin-bottom: 32px;
+    font-family: var( --primary-title-font);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var( --primary-black-text);
+}
+.map{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 100%;
+    max-width:480px;
+    height: 199px;
+    border-radius: 10px;
+}
+.butto-map-submit{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top:24px;
+}
+
+}
+
+@media screen and (min-width: 768px){
+
+.our-location__modal-map{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    width: 100%;
+    height: 100%;
+}
+.modal-map{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 568px;
+    
+    height: 458px;
+    background: var(--primary-white-text);
+    border: 2px solid #F8D24E;
+border-radius: 10px;
+}
+.map-close{
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    border: none;
+    line-height: 0;
+    background: transparent;
+}
+.map-close-icon{
+    width: 20px;
+    height: 20px;
+    
+}
+.text-modal-map{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 32px;
+    margin-bottom: 32px;
+    font-family: var( --primary-title-font);
+    font-size: 20px;
+    line-height: 1.4;
+    color: var( --primary-black-text);
+}
+.map{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 448px;
+    height: 260px;
+    border-radius: 10px;
+}
+
+.butto-map-submit{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+
+
+}
+
