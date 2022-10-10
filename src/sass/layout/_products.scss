@@ -8,14 +8,34 @@
 
 // @media screen and (max-width: 767px) {
 //   .products__ice-cream-overlay {
-//     max-width: 320px;
-//     height: 700px;
+//     max-width: 480px;
+//    height: 1920px;
 //     background-image: url(../images/mobile/products_bcg-ice-cream_mobile1.jpg);
 //   }
 // }
 
 .products {
   padding: 60px 0;
+}
+
+.products__ice-cream-overlay {
+  margin: 0 auto;
+  background-repeat: repeat-y;
+  background-position: left top;
+  background-size: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .products__ice-cream-overlay {
+    max-width: 480px;
+    height: 1920px;
+    background-color: #ffffff;
+    background-image: url('../images/mobile/gallery-section-ice-cream_mobile-bg.png');
+    // background-position: left top;
+    // background-image: url('../images/mobile/products_bcg-ice-cream_mobile.jpg'),
+    //   url('../images/mobile/products_bcg-coffee_mobile.jpg');
+    // background-position: center top, center bottom;
+  }
 }
 
 .products__paragraph {
@@ -38,10 +58,19 @@
   margin-bottom: 40px;
 }
 
+.products__list {
+  display: flex;
+  flex-direction: column;
+  // margin: 0 auto;
+}
+
 .products__list-element {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
+  position: relative;
   max-width: 280px;
   height: 528px;
-  background-color: antiquewhite;
 }
 
 .products__list-element:not(:last-child) {
@@ -49,8 +78,8 @@
 }
 
 .products__list-card {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   height: 420px;
   background-color: var(--primary-bg-color);
 
@@ -65,6 +94,8 @@
 
 .products__list-ellipse {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 200px;
   height: 200px;
   border-radius: 50%;
