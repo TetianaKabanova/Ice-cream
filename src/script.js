@@ -1,5 +1,5 @@
 new Swiper('.image-slider', {
-  // autoHeight: true,
+  autoHeight: true,
 
   // Включено перетаскивание на ПК
   simulateTouch: true,
@@ -23,6 +23,13 @@ new Swiper('.image-slider', {
     pageUpDown: true,
   },
 
+  // Управление колесом мыши
+
+  mousewheel: {
+    sensitivity: 1,
+    eventsTarget: 'image-slider',
+  },
+
   spaceBetween: 10,
 
   slidesPerGroup: 1,
@@ -34,7 +41,7 @@ new Swiper('.image-slider', {
   autoplay: {
     delay: 1000,
     stopOnLastSlide: true,
-    disableOnIneraction: false,
+    disableOnItneraction: false,
   },
   speed: 800,
 
