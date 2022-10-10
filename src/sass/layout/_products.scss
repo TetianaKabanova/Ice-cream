@@ -1,0 +1,135 @@
+// .products__ice-cream-overlay {
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+// }
+
+// @media screen and (max-width: 767px) {
+//   .products__ice-cream-overlay {
+//     max-width: 320px;
+//     height: 700px;
+//     background-image: url(../images/mobile/products_bcg-ice-cream_mobile1.jpg);
+//   }
+// }
+
+.products {
+  padding: 60px 0;
+}
+
+.products__paragraph {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  // padding-top: 60px;
+}
+
+.products__title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.products__list-element {
+  max-width: 280px;
+  height: 528px;
+  background-color: antiquewhite;
+}
+
+.products__list-element:not(:last-child) {
+  margin-bottom: 56px;
+}
+
+.products__list-card {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  background-color: var(--primary-bg-color);
+
+  &.bcg-coffee {
+    background-color: var(--product-bg-yellow);
+  }
+
+  &.bcg-milkshakes {
+    background-color: var(--product-bg-brown);
+  }
+}
+
+.products__list-ellipse {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+  &.ellipse-coffee {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  }
+
+  &.ellipse-milkshakes {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.products__list-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 123px;
+  margin-bottom: 40px;
+}
+
+.products__list-paragraph {
+  font-weight: 400;
+  line-height: 1.76;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.products__btn {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: flex-end;
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary-bg-color);
+  margin-bottom: 20px;
+  padding: 0;
+
+  &.btn-coffee {
+    background-color: var(--product-bg-yellow);
+  }
+
+  &.btn-milkshakes {
+    background-color: var(--product-bg-brown);
+  }
+}
