@@ -133,6 +133,11 @@ screen
 //   height: 100%;
 // }
 
+.gallery-section {
+  display: flex;
+  justify-content: center;
+}
+
 .image-slider__image {
   margin-left: auto;
   margin-right: auto;
