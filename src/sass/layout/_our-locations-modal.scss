@@ -57,11 +57,40 @@ border-radius: 10px;
     border-radius: 10px;
 }
 .butto-map-submit{
-    display: flex;
+   
+    margin-top: 24px;
+    width: 121px;
+    height: 42px;
+    background-color: var(--accent-color);
+    text-align: center;
+    color: var(--primary-black-text);
+    fill: var(--primary-black-text);
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
-    margin-top:24px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    display: flex;
+    transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+    &:hover {
+        background-color: var(--btn-bg-hover);
+    }
+
+    &:focus {
+        background-color: var(--btn-bg-hover);
+        color: var(--primary-white-text);
+        fill: var(--primary-white-text);
+    }
+
+    &:disabled {
+        background-color: var(--contact-grey);
+    }
 }
 
 }
@@ -125,11 +154,45 @@ border-radius: 10px;
 }
 
 .butto-map-submit{
-    display: flex;
+    // display: flex;
+    // margin-left: auto;
+    // margin-right: auto;
+    // justify-content: center;
+    // margin-top: 32px;
+
+    margin-top: 32px;
+    width: 145px;
+    height: 42px;
+    background-color: var(--accent-color);
+    text-align: center;
+    color: var(--primary-black-text);
+    fill: var(--primary-black-text);
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
-    margin-top: 32px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    display: flex;
+    transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+    &:hover {
+        background-color: var(--btn-bg-hover);
+    }
+
+    &:focus {
+        background-color: var(--btn-bg-hover);
+        color: var(--primary-white-text);
+        fill: var(--primary-white-text);
+    }
+
+    &:disabled {
+        background-color: var(--contact-grey);
+    }
 }
 
 
