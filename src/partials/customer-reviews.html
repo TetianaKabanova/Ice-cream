@@ -1,9 +1,10 @@
 <!-- CUSTOMER REVIEWS -->
-<section class="cr__section section">
-<div class="cr__container container">
+<section class="cr__section section" id="customer-reviews">
     <h2 class="cr__header visually-hidden">customer reviews</h2>
-    <div class="cr__list list">
-        <div class="cr__card">
+
+<div class="cr__container swiper-container">
+    <div class="cr__list swiper-wrapper">
+        <div class="cr__card swiper-slide">
             <picture>
                 <source
                     srcset="./images/cr_customer_emily.webp 1x, ./images/cr_customer_emily@2x.webp 2x"
@@ -22,7 +23,8 @@
 
             <p class="cr__customer-details">Emily, Los Angeles</p>
         </div>
-        <div class="cr__card">
+
+        <div class="cr__card swiper-slide">
             <picture>
                 <source
                     srcset="./images/cr_customer_bryan.webp 1x, ./images/cr_customer_bryan@2x.webp 2x"
@@ -41,7 +43,8 @@
 
             <p class="cr__customer-details">Bryan, New-York</p>
         </div>
-        <div class="cr__card">
+
+        <div class="cr__card swiper-slide">
             <picture>
                 <source
                     srcset="./images/cr_customer_diana.webp 1x, ./images/cr_customer_diana@2x.webp 2x"
@@ -60,7 +63,8 @@
 
             <p class="cr__customer-details">Diana, Chicago</p>
         </div>
-        <div class="cr__card">
+
+        <div class="cr__card swiper-slide">
             <picture>
                 <source
                     srcset="./images/cr_customer_sam.webp 1x, ./images/cr_customer_sam@2x.webp 2x"
@@ -80,22 +84,9 @@
             <p class="cr__customer-details">Sam, Los Angeles</p>
         </div>
     </div>
-    <ul class="cr__dots list">
-        <li class="cr__dots-item">
-            <svg class="cr__dots-icon cr__dots--active">
-                <use href="./images/cr_dot_sprite.svg#icon-cr_dot"></use>
-            </svg>
-        </li>
-        <li class="cr__dots-item">
-            <svg class="cr__dots-icon cr__dots--not-active">
-                <use href="./images/cr_dot_sprite.svg#icon-cr_dot"></use>
-            </svg>
-        </li>
-        <li class="cr__dots-item">
-            <svg class="cr__dots-icon cr__dots--not-active">
-                <use href="./images/cr_dot_sprite.svg#icon-cr_dot"></use>
-            </svg>
-        </li>
-    </ul>
+
+    <div class="swiper-pagination"></div>
+
 </div>
+
 </section>

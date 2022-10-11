@@ -1,15 +1,14 @@
-new Swiper('.cr__container', {
+new Swiper('.cr__container',{
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
+    clickable: true
   },
-
   loop: true,
   speed: 700,
 
   autoplay: {
     delay: 5000,
-    disableOnInteraction: false,
+    disableOnInteraction: false
   },
 
   simulateTouch: true,
@@ -18,6 +17,6 @@ new Swiper('.cr__container', {
 
   keybord: {
     enabled: true,
-    onlyInViewport: true,
+    onlyInViewport: true
   },
 });
