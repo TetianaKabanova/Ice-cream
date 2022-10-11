@@ -220,18 +220,27 @@
 .address__button {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    // gap: 16px;
+    gap: 16px;
 
     margin-top: 32px;    
 
     @media screen and (min-width: 768px) {
         margin-top: 60px;
+        flex-wrap: nowrap;
+        
     }
 
     @media screen and (min-width: 1200px) {
         margin-top: 64px;
     }
+}
+
+.address__location,
+.address__franchise {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .button_spit_icon {
