@@ -25,7 +25,6 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 12px;
-  // padding-top: 60px;
 }
 
 .products__title {
@@ -41,12 +40,10 @@
 .products__list {
   display: flex;
   flex-direction: column;
-  // margin: 0 auto;
 }
 
 .products__list-element {
   display: flex;
-  // align-items: flex-end;
   margin: 0 auto;
   position: relative;
   max-width: 280px;
@@ -55,23 +52,6 @@
 
 .products__list-element:not(:last-child) {
   margin-bottom: 56px;
-}
-
-.products__list-card {
-  align-self: flex-end;
-  // display: flex;
-  // flex-direction: column;
-  height: 420px;
-  border-radius: 24px;
-  background-color: var(--product-bg-green);
-
-  &.bcg-coffee {
-    background-color: var(--product-bg-yellow);
-  }
-
-  &.bcg-milkshakes {
-    background-color: var(--product-bg-brown);
-  }
 }
 
 .products__list-ellipse {
@@ -131,6 +111,23 @@
   }
 }
 
+.products__list-card {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  border-radius: 24px;
+  background-color: var(--product-bg-green);
+
+  &.bcg-coffee {
+    background-color: var(--product-bg-yellow);
+  }
+
+  &.bcg-milkshakes {
+    background-color: var(--product-bg-brown);
+  }
+}
+
 .products__list-title {
   font-weight: 700;
   font-size: 20px;
@@ -152,18 +149,64 @@
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  align-self: flex-end;
+  margin-top: auto;
   cursor: pointer;
   border: none;
   background-color: var(--product-bg-green);
   margin-bottom: 20px;
   padding: 0;
 
+  width: 68px;
+  height: 36px;
+  background-image: url('../images/arrow1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: background-image var(--transition-dur-and-func);
+
+  &:focus {
+    background-image: url('../images/arrow3.png');
+  }
+
   &.btn-coffee {
     background-color: var(--product-bg-yellow);
+
+    &:focus {
+      background-image: url('../images/arrow3.png');
+    }
   }
 
   &.btn-milkshakes {
     background-color: var(--product-bg-brown);
+
+    &:focus {
+      background-image: url('../images/arrow3.png');
+    }
   }
+
+  &:hover {
+    background-image: url('../images/arrow2.png');
+  }
+
+  // &:hover {
+  //   transform: scale(1.25);
+  //   display: none;
+  // }
 }
+
+// .arrow {
+//   width: 52px;
+//   height: 24px;
+//   background-image: url('../images/arrow1.png');
+//   background-repeat: no-repeat;
+//   background-position: center;
+
+//   &:hover {
+//     background-image: url('../images/arrow2.png');
+//   }
+
+//     &:focus {
+//       background-image: url('../images/arrow3.png');
+//       background-color: aqua;
+//     }
+//   }
