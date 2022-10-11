@@ -1,151 +1,46 @@
-// .gallery-overlay {
-// margin-left: auto;
-// margin-right: auto;
-
-// background-image: linear-gradient(
-//   to bottom,
-//   rgba(132, 161, 120, 1) 0px 24px,
-//   rgba(255, 255, 255, 0.9) 24px 100%
-// );
-
-/* 
-screen
-2x +
-0px - 767px
-*/
-// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-//   screen and (min-resolution: 192dpi) and (max-width: 767px),
-//   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-//   background-image: linear-gradient(
-//     to bottom,
-//     rgba(132, 161, 120, 1) 0px 24px,
-//     rgba(255, 255, 255, 0.9) 24px 100%
-//   );
-// }
-
-/* 
-768px +
-*/
-// @media screen and (min-width: 768px) {
-//   background-image: linear-gradient(
-//     to bottom,
-//     rgba(132, 161, 120, 1) 0px 164px,
-//     rgba(255, 255, 255, 0.9) 164px 100%
-//   );
-// }
-
-/* 
-screen
-2x +
-768px +
-*/
-// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-//   screen and (min-resolution: 192dpi) and (min-width: 768px),
-//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
-//   background-image: linear-gradient(
-//     to bottom,
-//     rgba(132, 161, 120, 1) 0px 164px,
-//     rgba(255, 255, 255, 0.9) 164px 100%
-//   );
-// }
-
-/* 
-1200px +
-*/
-// @media screen and (min-width: 1200px) {
-//   background-image: linear-gradient(
-//     to bottom,
-//     rgba(132, 161, 120, 1) 0px 94px,
-//     rgba(255, 255, 255, 0.9) 94px 100%
-//   );
-// }
-/* 
-2x +
-1200px +
-screen
-*/
-//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-//     screen and (min-resolution: 192dpi) and (min-width: 1200px),
-//     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-//     background-image: linear-gradient(
-//       to bottom,
-//       rgba(132, 161, 120, 1) 0px 94px,
-//       rgba(255, 255, 255, 0.9) 94px 100%
-//     );
-//   }
-// }
-
-// .swiper-wrapper {
-//   min-width: 0;
-// }
-
-// .wrapper {
-//   min-height: 100%;
-// }
-// .image-slider__image {
-//   text-align: center;
-
-//   @media screen and (min-width: 480px) {
-//     width: 279px;
-//     height: 130px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 704px;
-//     height: 327px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     width: 1013px;
-//     height: 422px;
-//   }
-// }
-
-// .swiper-wrapper {
-//   min-width: 0;
-// }
-// .image-slider__image img {
-//   max-width: 100%;
-// }
-// .image-slider .swiper-slide {
-//   width: auto;
-// }
-
-// .image-slider .swiper-button-prev::after,
-// .image-slider .swiper-button-next::after {
-//   color: var(--primary-bg-color);
-//   font-size: 50px;
-// }
-
-// .image-slider__image {
-//   @media screen and (min-width: 768px) {
-//     max-width: 704px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     max-width: 1013px;
-//   }
-// }
-// .image-slider__picture {
-//   margin-left: auto;
-//   margin-right: auto;
-//   object-fit: cover;
-//   max-width: 100%;
-//   height: 100%;
-// }
-
 .gallery-section {
   display: flex;
   justify-content: center;
+  position: relative;
+
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: 479px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.image-slider {
+  //   position: relative;
+  @media screen and (max-width: 479px) {
+    padding: 0;
+    max-width: 279px;
+    width: 100%;
+    height: 130px;
+  }
 }
 
 .image-slider__image {
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (max-width: 480px) {
-    width: 279px;
+  @media screen and (max-width: 479px) {
+    position: absolute;
+    max-width: 279px;
+    width: 100%;
     height: 130px;
-    border-radius: 7px;
+  }
+}
+
+.image-slider__picture {
+  border-radius: 7px;
+  @media screen and (max-width: 479px) {
+    max-width: 279px;
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 279px;
+    max-width: 100%;
   }
   @media screen and (min-width: 768px) {
     width: 704px;
@@ -155,25 +50,6 @@ screen
   @media screen and (min-width: 1200px) {
     width: 1013px;
     height: 422px;
-    border-radius: 24px;
-  }
-}
-
-.image-slider__image img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-
-  @media screen and (min-width: 480px) {
-    border-radius: 7px;
-  }
-
-  @media screen and (min-width: 768px) {
-    border-radius: 18px;
-  }
-
-  @media screen and (min-width: 1200px) {
     border-radius: 24px;
   }
 }
