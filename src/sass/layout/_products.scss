@@ -1,21 +1,8 @@
-.products {
-  padding: 60px 0;
-}
-
 .products__ice-cream-overlay {
   margin: 0 auto;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
-}
-
-@media screen and (max-width: 767px) {
-  .products__ice-cream-overlay {
-    max-width: 480px;
-    height: 1920px;
-    background-position: top left;
-    background-image: url('../images/desktop/ice-cream-test.jpg');
-  }
+  background-size: cover;
 }
 
 .products__paragraph {
@@ -28,7 +15,7 @@
 }
 
 .products__title {
-  font-family: 'Seymour One';
+  font-family: var(--primary-title-font);
   font-weight: 400;
   font-size: 30px;
   line-height: 1.27;
@@ -48,10 +35,40 @@
   position: relative;
   max-width: 280px;
   height: 528px;
+
+  &:not(:last-child) {
+    margin-bottom: 56px;
+  }
 }
 
-.products__list-element:not(:last-child) {
-  margin-bottom: 56px;
+.products__list-card {
+  align-self: flex-end;
+  height: 420px;
+  border-radius: 24px;
+  background-color: var(--product-bg-green);
+
+  &.bcg-coffee {
+    background-color: var(--product-bg-yellow);
+  }
+
+  &.bcg-milkshakes {
+    background-color: var(--product-bg-brown);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products {
+    padding: 60px 0;
+  }
+
+  .products__ice-cream-overlay {
+    max-width: 480px;
+    height: 1920px;
+    background-repeat: repeat-y;
+    background-size: auto;
+    background-position: top left;
+    background-image: url('../images/desktop/ice-cream-test.jpg');
+  }
 }
 
 .products__list-ellipse {
@@ -111,23 +128,6 @@
   }
 }
 
-.products__list-card {
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  height: 420px;
-  border-radius: 24px;
-  background-color: var(--product-bg-green);
-
-  &.bcg-coffee {
-    background-color: var(--product-bg-yellow);
-  }
-
-  &.bcg-milkshakes {
-    background-color: var(--product-bg-brown);
-  }
-}
-
 .products__list-title {
   font-weight: 700;
   font-size: 20px;
@@ -143,6 +143,75 @@
   line-height: 1.76;
   text-align: center;
   padding: 0 40px;
+}
+
+// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//   screen and (min-resolution: 192dpi) and (max-width: 767px),
+//   screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//   .products__ice-cream-overlay {
+//     background-image: url('../images/mobile/');
+//   }
+// }
+
+@media screen and (min-width: 768px) {
+  .products {
+    padding: 60px 0 74px 0;
+  }
+
+  .products__ice-cream-overlay {
+    max-width: 768px;
+    height: 852px;
+    background-image: url('../images/tablet/products_bcg_tablet.jpg');
+  }
+
+  .products__paragraph {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+
+  .products__title {
+    font-size: 34px;
+    margin-bottom: 80px;
+  }
+
+  .products__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+  }
+
+  .products__list-element {
+    width: 224px;
+    height: 548px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .products__list-card {
+    height: 428px;
+    border-radius: 16px;
+  }
+
+  .products__list-title {
+    font-size: 22px;
+    line-height: 1.23;
+    margin-top: 108px;
+    margin-bottom: 26px;
+  }
+
+  .products__list-paragraph {
+    padding: 0 26px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .products__ice-cream-overlay {
+    background-image: url('../images/tablet/products_bcg_tablet@2x.jpg');
+  }
 }
 
 .products__btn {
@@ -164,6 +233,10 @@
 
   transition: background-image var(--transition-dur-and-func);
 
+  &:hover {
+    background-image: url('../images/arrow2.png');
+  }
+
   &:focus {
     background-image: url('../images/arrow3.png');
   }
@@ -183,30 +256,4 @@
       background-image: url('../images/arrow3.png');
     }
   }
-
-  &:hover {
-    background-image: url('../images/arrow2.png');
-  }
-
-  // &:hover {
-  //   transform: scale(1.25);
-  //   display: none;
-  // }
 }
-
-// .arrow {
-//   width: 52px;
-//   height: 24px;
-//   background-image: url('../images/arrow1.png');
-//   background-repeat: no-repeat;
-//   background-position: center;
-
-//   &:hover {
-//     background-image: url('../images/arrow2.png');
-//   }
-
-//     &:focus {
-//       background-image: url('../images/arrow3.png');
-//       background-color: aqua;
-//     }
-//   }
