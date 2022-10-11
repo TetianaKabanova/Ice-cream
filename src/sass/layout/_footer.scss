@@ -33,7 +33,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   gap: 27px;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .social-list__link {
@@ -115,6 +115,9 @@
     justify-content: space-between;
     align-items: flex-end;
   }
+  .social-list {
+    margin-bottom: 32px;
+  }
   .page-footer__footer-top {
     margin-bottom: 30px;
   }
@@ -152,6 +155,9 @@
 @media screen and (min-width: 1200px) {
   .page-footer__footer-top {
     margin-bottom: 60px;
+  }
+  .social-list {
+    margin-bottom: 40px;
   }
   .mark-main-text {
     display: none;
