@@ -3,7 +3,6 @@ new Swiper('.cr__container',{
     el: '.swiper-pagination',
     clickable: true
   },
-  
   loop: true,
   speed: 700,
 
