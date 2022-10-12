@@ -18,12 +18,13 @@
 
 .products-modal {
     position: absolute;
-    top: 50%;
+    top: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
-
+    transform: translateX(-50%);
+    
     width: 100%;
     max-width: 280px;
+    max-height: 95%;
     padding: 28px 20px 32px 20px;
     text-align: center;
 
@@ -32,6 +33,7 @@
     background: var(--modal-bg-white);
 
     transition: transform 500ms ease;
+    overflow: auto;
 }
 
 .products-modal__close-btn {
@@ -57,11 +59,11 @@
 }
 
 .products__btn:active .products-modal {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateX(-50%) scale(1);
 }
 
 .products-modal__close-btn:active .products-modal {
-    transform: translate(-50%, -50%) scale(0);
+    transform: translateX(-50%) scale(0);
 }
 
 .products-modal__title {
