@@ -60,9 +60,6 @@
   .products__ice-cream-overlay {
     width: 100%;
     height: 1920px;
-    background-repeat: repeat-y;
-    background-size: auto;
-    background-position: top left;
     background-image: url('../images/mobile/products_bcg_mobile.jpg');
   }
 
@@ -155,7 +152,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: auto;
-  cursor: pointer;
+  cursor: url('../images/cursor.png') 12 12, pointer;
   border: none;
   background-color: var(--product-bg-green);
   margin-bottom: 20px;
