@@ -15,10 +15,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100% ;
-    max-width: 479px;
-   padding: 28px;
-   height: 459px;
+    width:280px ;
+    
+    padding: 28px;
+  
     background: var(--modal-bg-white);
     border: 2px solid #F8D24E;
     border-radius: 10px;
@@ -62,9 +62,9 @@
   .video-read-modal{
     width:224px;
    
-    height: 199px;
     
-    padding-bottom: 20px;
+    
+    margin-bottom: 20px;
     display: flex;
     border-radius: 10px;
     margin-left: auto;
