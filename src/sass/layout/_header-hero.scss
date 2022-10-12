@@ -153,12 +153,18 @@
         background-repeat: no-repeat;
         background-size: contain;
         pointer-events: none;
+        animation-name: Appearance;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
     }
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero-container::after {
             background-image: url('../images/mobile/header-hero_icecream-mobile@2x.png');
+            animation-name: Appearance;
+            animation-duration: 1000ms;
+            animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
         }
     }
     
@@ -287,6 +293,10 @@
             background-image: url('../images/tablet/header-hero_more-icecream-tablet.png');
             background-repeat: no-repeat;
             background-size: cover;
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
     }
 
@@ -295,6 +305,10 @@
     (min-resolution: 2dppx) {
         .hero-subtitle::before {
             background-image: url('../images/tablet/header-hero_more-icecream-tablet@2x.png');
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
     }
 
@@ -427,6 +441,10 @@
             background-image: url('../images/desktop/header-hero_more-icecream-desktop.png');
             background-repeat: no-repeat;
             background-size: cover;
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
     }
 
@@ -435,6 +453,10 @@
     (min-resolution: 2dppx) {
         .hero-subtitle::before {
             background-image: url('../images/desktop/header-hero_more-icecream-desktop@2x.png');
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
     }
 
@@ -476,9 +498,20 @@
     }
 
     @keyframes Appearance {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+    }
         
     }
+}
+
+@keyframes circle {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
