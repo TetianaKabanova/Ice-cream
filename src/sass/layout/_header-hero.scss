@@ -442,9 +442,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             animation-name: circle;
-            animation-duration: 5s;
+            animation-duration: 3000ms;
             animation-timing-function: linear;
-            animation-iteration-count: infinite;
+            animation-iteration-count: 1;
+            // animation-iteration-count: infinite;
         }
     }
 
@@ -454,9 +455,10 @@
         .hero-subtitle::before {
             background-image: url('../images/desktop/header-hero_more-icecream-desktop@2x.png');
             animation-name: circle;
-            animation-duration: 5s;
+            animation-duration: 3000ms;
             animation-timing-function: linear;
-            animation-iteration-count: infinite;
+            animation-iteration-count: 1;
+            // animation-iteration-count: infinite;
         }
     }
 
@@ -485,7 +487,7 @@
         background-size: contain;
         pointer-events: none;
         animation-name: Appearance;
-        animation-duration: 1000ms;
+        animation-duration: 2000ms;
         animation-timing-function: cubic-bezier(.1,-.6,.2,0);
     }
     
@@ -500,18 +502,26 @@
     @keyframes Appearance {
         0% {
             opacity: 0;
-            transform: translateX(100%);
+            transform: scale(0);
         }
+        50% {
+            transform: scale(1.25);
+        }
+
         100% {
             opacity: 1;
-            transform: translateX(0%);
+            transform: scale(1);
     }
         
     }
 }
 
 @keyframes circle {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+    0% {transform: rotate(0deg) translatex(-100%);
+    }
+
+
+    100% {transform: rotate(360deg) translatex(0%);
+    }
 }
 
