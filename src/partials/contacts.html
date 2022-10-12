@@ -9,7 +9,7 @@
           <div class="address__location">
             <p class="address__city">Chicago</p>
             <a
-              class="address__map link"
+              class="address__map link cursor"
               href="https://goo.gl/maps/VzNoZLMBNPfWPi5u5"
               >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
             >
@@ -27,10 +27,12 @@
             </ul>
           </div>
           <div class="address__cont">
-            <a class="address__tel link" href="tel:+61(0)383766284"
+            <a class="address__tel link cursor" href="tel:+61(0)383766284"
               >+61(0) 383 766 284</a
             >
-            <a class="address__mail link" href="mailto:noreply@envato.com"
+            <a
+              class="address__mail link cursor"
+              href="mailto:noreply@envato.com"
               >noreply@envato.com</a
             >
           </div>
@@ -42,7 +44,7 @@
           <div class="address__location">
             <p class="address__city">Los Angeles</p>
             <a
-              class="address__map link"
+              class="address__map link cursor"
               href="https://goo.gl/maps/nHLZZqbbWmXqPMtEA"
               >1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a
             >
@@ -60,10 +62,12 @@
             </ul>
           </div>
           <div class="address__cont">
-            <a class="address__tel link" href="tel:+61(0)383766284"
+            <a class="address__tel link cursor" href="tel:+61(0)383766284"
               >+61(0) 383 766 284</a
             >
-            <a class="address__mail link" href="mailto:noreply@envato.com"
+            <a
+              class="address__mail link cursor"
+              href="mailto:noreply@envato.com"
               >noreply@envato.com</a
             >
           </div>
@@ -75,7 +79,7 @@
           <div class="address__location">
             <p class="address__city">New York</p>
             <a
-              class="address__map link"
+              class="address__map link cursor"
               href="https://goo.gl/maps/fTWdC7voBk4f9Qzw8"
               >726 Sterling Pl, Brooklyn, NY 11222, USA</a
             >
@@ -93,10 +97,12 @@
             </ul>
           </div>
           <div class="address__cont">
-            <a class="address__tel link" href="tel:+61(0)383766284"
+            <a class="address__tel link cursor" href="tel:+61(0)383766284"
               >+61(0) 383 766 284</a
             >
-            <a class="address__mail link" href="mailto:noreply@envato.com"
+            <a
+              class="address__mail link cursor"
+              href="mailto:noreply@envato.com"
               >noreply@envato.com</a
             >
           </div>
@@ -104,8 +110,26 @@
       </li>
     </ul>
     <div class="address__button">
-      <button type="button" class="button_location"></button>
-      <button type="button" class="button_franchise"></button>
+      <button
+        type="button"
+        class="button_location address__location cursor"
+        data-modal4-open
+      >
+        <span class="button_spit">Our Locations</span>
+        <svg class="button_spit_icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-more-sign"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="button_franchise address__franchise cursor"
+        data-modal5-open
+      >
+        <span class="button_spit">Franchise</span>
+        <svg class="button_spit_icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-more-sign"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
