@@ -47,6 +47,7 @@
     background-color: transparent;
     padding: 0;
     cursor: pointer;
+    outline: none;
 }
 
 .products-modal__close-btn-icon {
@@ -190,11 +191,13 @@
     border-radius: 10px;
 
     cursor: pointer;
+    outline: none;
 
     &::placeholder {
         line-height: 1.4;
         color: var(--primary-black-text);
     }
+    
 }
 
 .products-modal__form-phone {
@@ -221,6 +224,7 @@
     line-height: 1.21;
 
     cursor: pointer;
+    outline: none;
 
     transition: background var(--transition-dur-and-func), color var(--transition-dur-and-func);
 
