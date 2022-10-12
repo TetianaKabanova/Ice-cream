@@ -1,3 +1,11 @@
+.contacts {
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 120px;
+    }
+}
+
 .address__container {
     display: flex;
     flex-wrap: wrap;
@@ -86,19 +94,6 @@
         font-size: 16px;
         line-height: calc(30/16);
         }
-}
-
-.address__location {
-    font-style: normal;
-    border-bottom: 1px solid var(--line-grey);
-
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-
-    @media screen and (min-width: 768px) {
-        padding-bottom: 32px;
-        margin-bottom: 32px;
-    }    
 }
 
 .address__city {
