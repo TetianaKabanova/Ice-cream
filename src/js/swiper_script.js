@@ -30,7 +30,7 @@ new Swiper('.image-slider', {
     eventsTarget: 'image-slider',
   },
 
-  spaceBetween: 10,
+  spaceBetween: 30,
 
   slidesPerGroup: 1,
 
@@ -40,14 +40,14 @@ new Swiper('.image-slider', {
 
   autoplay: {
     delay: 1000,
-    stopOnLastSlide: false,
+    stopOnLastSlide: true,
     disableOnItneraction: false,
   },
-  speed: 800,
+  speed: 2000,
 
-  effect: 'flip',
-  flipEffect: {
-    slideShadows: true,
-    limitRotation: true,
-  },
+  // effect: 'flip',
+  // flipEffect: {
+  //   slideShadows: true,
+  //   limitRotation: true,
+  // },
 });
