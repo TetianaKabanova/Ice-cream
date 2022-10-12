@@ -45,9 +45,9 @@ new Swiper('.image-slider', {
   },
   speed: 2000,
 
-  // effect: 'flip',
-  // flipEffect: {
-  //   slideShadows: true,
-  //   limitRotation: true,
-  // },
+  effect: 'flip',
+  flipEffect: {
+    slideShadows: true,
+    limitRotation: true,
+  },
 });
