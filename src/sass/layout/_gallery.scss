@@ -1,3 +1,22 @@
+.swiper-3d,
+.swiper-3d.swiper-css-mode .swiper-wrapper {
+  @media screen and (min-width: 320px) {
+    width: 279px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 279px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1013px;
+  }
+}
+
 .gallery-section {
   display: flex;
   justify-content: center;
@@ -10,6 +29,27 @@
     padding-left: 20px;
   }
 }
+
+.image-slider__image {
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media screen and (min-width: 320px) {
+    width: 279px;
+    height: 130px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 279px;
+    height: 130px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 327px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1013px;
+    height: 422px;
 
 .image-slider {
   //   position: relative;
@@ -36,6 +76,7 @@
     max-width: 279px;
     width: 100%;
   }
+
   @media screen and (min-width: 480px) {
     margin-right: auto;
     margin-left: auto;

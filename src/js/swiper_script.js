@@ -40,7 +40,7 @@ new Swiper('.image-slider', {
 
   autoplay: {
     delay: 1000,
-    stopOnLastSlide: true,
+    stopOnLastSlide: false,
     disableOnItneraction: false,
   },
   speed: 800,
