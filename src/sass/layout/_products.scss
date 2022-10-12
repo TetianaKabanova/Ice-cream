@@ -63,7 +63,7 @@
     background-repeat: repeat-y;
     background-size: auto;
     background-position: top left;
-    background-image: url('../images/desktop/ice-cream-test.jpg');
+    background-image: url('../images/mobile/products_bcg_mobile.jpg');
   }
 
   .products__list-element {
@@ -172,13 +172,11 @@
 
   &:hover {
     width: 50px;
-    // height: 20px;
     background-image: url('../images/arrow222.png');
   }
 
   &:focus {
     width: 50px;
-    // height: 30px;
     background-image: url('../images/arrow333.png');
   }
 
@@ -187,7 +185,6 @@
 
     &:focus {
       width: 50px;
-      // height: 30px;
       background-image: url('../images/arrow333.png');
     }
   }
@@ -197,7 +194,6 @@
 
     &:focus {
       width: 50px;
-      // height: 30px;
       background-image: url('../images/arrow333.png');
     }
   }
@@ -206,9 +202,9 @@
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  // .products__ice-cream-overlay {
-  //   background-image: url('../images/mobile/');
-  // }
+  .products__ice-cream-overlay {
+    background-image: url('../images/mobile/products_bcg_mobile@2x.jpg');
+  }
 
   .products__list-ellipse {
     &::before {
