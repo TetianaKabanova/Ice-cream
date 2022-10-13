@@ -36,10 +36,10 @@
 }
 
 .products__list-card {
-  display: flex;
   align-self: flex-end;
+  display: flex;
   flex-direction: column;
-  height: 420px;
+  min-height: 420px;
   border-radius: 24px;
   background-color: var(--product-bg-green);
 
@@ -58,12 +58,9 @@
   }
 
   .products__ice-cream-overlay {
-    max-width: 480px;
-    height: 1920px;
-    background-repeat: repeat-y;
-    background-size: auto;
-    background-position: top left;
-    background-image: url('../images/desktop/ice-cream-test.jpg');
+    width: 100%;
+    height: 1927px;
+    background-image: url('../images/mobile/products_bcg_mobile.jpg');
   }
 
   .products__list-element {
@@ -139,8 +136,8 @@
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 123px;
-  margin-bottom: 40px;
+  padding-top: 123px;
+  padding-bottom: 40px;
 }
 
 .products__list-paragraph {
@@ -155,34 +152,37 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: auto;
-  // align-self: flex-end;
-  cursor: pointer;
+  cursor: url('../images/cursor.png') 12 12, pointer;
   border: none;
   background-color: var(--product-bg-green);
-  margin-bottom: 20px;
   padding: 0;
+  margin-bottom: 20px;
 
-  width: 68px;
-  height: 36px;
-  background-image: url('../images/arrow1.png');
+  width: 40px;
+  height: 24px;
+  background-image: url('../images/arrow111.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 
   transition: background-image var(--transition-dur-and-func);
 
   &:hover {
-    background-image: url('../images/arrow2.png');
+    width: 50px;
+    background-image: url('../images/arrow222.png');
   }
 
   &:focus {
-    background-image: url('../images/arrow3.png');
+    width: 50px;
+    background-image: url('../images/arrow333.png');
   }
 
   &.btn-coffee {
     background-color: var(--product-bg-yellow);
 
     &:focus {
-      background-image: url('../images/arrow3.png');
+      width: 50px;
+      background-image: url('../images/arrow333.png');
     }
   }
 
@@ -190,7 +190,8 @@
     background-color: var(--product-bg-brown);
 
     &:focus {
-      background-image: url('../images/arrow3.png');
+      width: 50px;
+      background-image: url('../images/arrow333.png');
     }
   }
 }
@@ -198,14 +199,17 @@
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  // .products__ice-cream-overlay {
-  //   background-image: url('../images/mobile/');
-  // }
+  .products__ice-cream-overlay {
+    background-image: url('../images/mobile/products_bcg_mobile@2x.jpg');
+  }
 
   .products__list-ellipse {
     &::before {
       content: '';
       background-image: url('../images/mobile/products_ice-cream_mobile@2x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
 
     &.ellipse-coffee::before {
@@ -224,7 +228,7 @@
   }
 
   .products__ice-cream-overlay {
-    width: 768px;
+    width: 100%;
     height: 852px;
     background-image: url('../images/tablet/products_bcg_tablet.jpg');
   }
@@ -255,7 +259,7 @@
   }
 
   .products__list-card {
-    height: 428px;
+    min-height: 428px;
     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     border-radius: 16px;
   }
@@ -263,8 +267,8 @@
   .products__list-title {
     font-size: 22px;
     line-height: 1.23;
-    margin-top: 108px;
-    margin-bottom: 26px;
+    padding-top: 108px;
+    padding-bottom: 26px;
   }
 
   .products__list-paragraph {
@@ -286,7 +290,7 @@
   }
 
   .products__ice-cream-overlay {
-    width: 1200px;
+    width: 100%;
     height: 1050px;
     background-image: url('../images/desktop/products_bcg_desktop.jpg');
   }
@@ -312,15 +316,15 @@
   }
 
   .products__list-card {
-    height: 535px;
+    min-height: 535px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
   }
 
   .products__list-title {
     font-size: 30px;
-    margin-top: 166px;
-    margin-bottom: 65px;
+    padding-top: 166px;
+    padding-bottom: 65px;
   }
 
   .products__list-paragraph {

@@ -22,7 +22,7 @@
           type="text"
           class="form-input"
           required
-          pattern="[A-Za-zА-Яа-яЁё]"
+          pattern="[a-zA-Zа-яА-яІіЇї]+"
           name="user-name"
           placeholder="Name"
         />
@@ -32,18 +32,17 @@
           type="text"
           class="form-input"
           required
-          pattern="[0-9]{3}"
-          name="user-name"
+          pattern="[0-9]+"
+          name="user-phone"
           placeholder="Phone"
         />
       </label>
       <label class="form-text">
         <input
-          type="text"
+          type="email"
           class="form-input"
           required
-          pattern="[A-Za-zА-Яа-яЁё]"
-          name="user-name"
+          name="user-email"
           placeholder="Email"
         />
       </label>
@@ -51,6 +50,7 @@
         <textarea
           name="user-message"
           class="form-textarea"
+          name="Comment"
           placeholder="Comment"
         ></textarea>
       </label>

@@ -87,9 +87,11 @@
   margin-bottom: 40px;
 }
 .page-footer__footer-bottom {
-  border-top: 1px solid var(--primary-white-text);
-  padding-top: 16px;
   padding-bottom: 60px;
+}
+.page-footer__top-line {
+  border-top: 1px solid var(--primary-white-text);
+  margin: 0 0 16px 0;
 }
 
 .copyright-text {
@@ -120,8 +122,10 @@
     margin-bottom: 24px;
   }
   .page-footer__footer-bottom {
-    padding-top: 14px;
     padding-bottom: 14px;
+  }
+  .page-footer__top-line {
+    margin: 0 0 14px 0;
   }
   .mark-copyright {
     display: none;
@@ -153,6 +157,9 @@
 @media screen and (min-width: 1200px) {
   .page-footer__footer-top {
     margin-bottom: 60px;
+  }
+  .page-footer__top-line {
+    margin: 0 20px 12px 20px;
   }
   .social-list {
     margin-bottom: 40px;

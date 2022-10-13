@@ -30,7 +30,7 @@ new Swiper('.image-slider', {
     eventsTarget: 'image-slider',
   },
 
-  spaceBetween: 30,
+  spaceBetween: 10,
 
   slidesPerGroup: 1,
 
@@ -43,7 +43,7 @@ new Swiper('.image-slider', {
     stopOnLastSlide: true,
     disableOnItneraction: false,
   },
-  speed: 2000,
+  speed: 800,
 
   effect: 'flip',
   flipEffect: {

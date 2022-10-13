@@ -43,6 +43,6 @@ body {
   list-style: none;
 }
 
-.buttoncursor {
-  cursor: pointer;
+.cursor {
+  cursor: url('../images/cursor.png') 12 12, pointer;
 }
