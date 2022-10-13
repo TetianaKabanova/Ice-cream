@@ -1,20 +1,20 @@
 <!--contacts-->
-<section class="contacts">
+<section class="contacts" id="cnts">
   <h2 class="visually-hidden">contacts</h2>
   <div class="container contacts__container">
     <ul class="address__container list">
       <li class="address__card">
         <p class="address__cafe">CAFE</p>
-        <address class="address" id="cnts">
-          <div class="address__location">
+        <ul class="address__content list">
+          <li class="address__location">
             <p class="address__city">Chicago</p>
             <a
               class="address__map link cursor"
               href="https://goo.gl/maps/VzNoZLMBNPfWPi5u5"
               >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
             >
-          </div>
-          <div class="address__schedule">
+          </li>
+          <li class="address__schedule">
             <ul class="address__menu list">
               <li class="address__item">
                 <p class="address__day">Monday - Friday</p>
@@ -25,8 +25,8 @@
                 <p class="address__time">08:00 AM - 16:00 PM</p>
               </li>
             </ul>
-          </div>
-          <div class="address__cont">
+          </li>
+          <li class="address__cont">
             <a class="address__tel link cursor" href="tel:+61(0)383766284"
               >+61(0) 383 766 284</a
             >
@@ -35,21 +35,21 @@
               href="mailto:noreply@envato.com"
               >noreply@envato.com</a
             >
-          </div>
-        </address>
+          </li>
+        </ul>
       </li>
       <li class="address__card">
         <p class="address__foodtruck">FOODTRUCK</p>
-        <address class="address">
-          <div class="address__location">
+        <ul class="address__content list">
+          <li class="address__location">
             <p class="address__city">Los Angeles</p>
             <a
               class="address__map link cursor"
               href="https://goo.gl/maps/nHLZZqbbWmXqPMtEA"
               >1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a
             >
-          </div>
-          <div class="address__schedule">
+          </li>
+          <li class="address__schedule">
             <ul class="address__menu list">
               <li class="address__item">
                 <p class="address__day">Monday - Friday</p>
@@ -60,9 +60,9 @@
                 <p class="address__time">08:00 AM - 16:00 PM</p>
               </li>
             </ul>
-          </div>
-          <div class="address__cont">
-            <a class="address__tel link cursor" href="tel:+61(0)383766284"
+          </li>
+          <li class="address__cont">
+            <a class="address__tel link" href="tel:+61(0)383766284"
               >+61(0) 383 766 284</a
             >
             <a
@@ -70,21 +70,21 @@
               href="mailto:noreply@envato.com"
               >noreply@envato.com</a
             >
-          </div>
-        </address>
+          </li>
+        </ul>
       </li>
       <li class="address__card">
         <p class="address__cafe">CAFE</p>
-        <address class="address">
-          <div class="address__location">
+        <ul class="address__content list">
+          <li class="address__location">
             <p class="address__city">New York</p>
             <a
               class="address__map link cursor"
               href="https://goo.gl/maps/fTWdC7voBk4f9Qzw8"
               >726 Sterling Pl, Brooklyn, NY 11222, USA</a
             >
-          </div>
-          <div class="address__schedule">
+          </li>
+          <li class="address__schedule">
             <ul class="address__menu list">
               <li class="address__item">
                 <p class="address__day">Monday - Friday</p>
@@ -95,9 +95,9 @@
                 <p class="address__time">08:00 AM - 16:00 PM</p>
               </li>
             </ul>
-          </div>
-          <div class="address__cont">
-            <a class="address__tel link cursor" href="tel:+61(0)383766284"
+          </li>
+          <li class="address__cont">
+            <a class="address__tel link" href="tel:+61(0)383766284"
               >+61(0) 383 766 284</a
             >
             <a
@@ -105,14 +105,14 @@
               href="mailto:noreply@envato.com"
               >noreply@envato.com</a
             >
-          </div>
-        </address>
+          </li>
+        </ul>
       </li>
     </ul>
     <div class="address__button">
       <button
         type="button"
-        class="button_location address__location cursor"
+        class="button_location address__lctn"
         data-modal4-open
       >
         <span class="button_spit">Our Locations</span>
@@ -122,7 +122,7 @@
       </button>
       <button
         type="button"
-        class="button_franchise address__franchise cursor"
+        class="button_franchise address__frnchs"
         data-modal5-open
       >
         <span class="button_spit">Franchise</span>
