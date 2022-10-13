@@ -172,6 +172,11 @@
 }
 
 .about__inner {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 105px;
   }
@@ -183,13 +188,11 @@
   padding-left: 30px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 7px;
     margin-bottom: 48px;
     padding-right: 0;
     padding-left: 0;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 90px;
   }
 }
 
