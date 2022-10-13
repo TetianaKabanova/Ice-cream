@@ -142,32 +142,6 @@
 }
 
 @media screen and (max-width: 767px) {
-    .hero-container::after {
-        content: '';
-        position: absolute;
-        width: 280px;
-        height: 100%;
-        bottom: -176px;
-        left: 18%;
-        background-image: url('../images/mobile/header-hero_icecream-mobile.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        pointer-events: none;
-        animation-name: Appearance;
-        animation-duration: 1000ms;
-        animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
-    }
-    @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero-container::after {
-            background-image: url('../images/mobile/header-hero_icecream-mobile@2x.png');
-            animation-name: Appearance;
-            animation-duration: 1000ms;
-            animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
-        }
-    }
-    
     .page-header__modal-btn {
         display: none;
     }
@@ -189,9 +163,13 @@
     }
 
     .hero-container {
-        background-image: url('../images/mobile/header-hero_points-mobile.png');
-        background-size: contain;
-        background-position: bottom;
+        background-image: url('../images/mobile/header-hero_points-mobile.png'), url('../images/mobile/header-hero_icecream-eyes1-mob.png'),
+            url('../images/mobile/header-hero_icecream-eyes2-mob.png'),
+            url('../images/mobile/header-hero_icecream-eyes3-mob.png'),
+            url('../images/mobile/header-hero_icecream-mobile.png'),
+            url('../images/mobile/header-hero_icecream-shadow-mobile.png');
+        background-size: contain, auto, auto, auto, auto, auto;
+        background-position: bottom, 36% 300px, 51% 260px, 53% 330px, 40% 254px, 40% 180px;
         background-repeat: no-repeat;
         }
     
@@ -199,7 +177,11 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .hero-container {
-            background-image: url('../images/mobile/header-hero_points-mobile@2x.png');
+            background-image: url('../images/mobile/header-hero_points-mobile@2x.png'), url('../images/mobile/header-hero_icecream-eyes1-mob@2x.png'),
+                url('../images/mobile/header-hero_icecream-eyes2-mob@2x.png'),
+                url('../images/mobile/header-hero_icecream-eyes3-mob@2x.png'),
+                url('../images/mobile/header-hero_icecream-mobile@2x.png'),
+                url('../images/mobile/header-hero_icecream-shadow-mobile@2x.png');
         }
     }
 }
@@ -296,7 +278,7 @@
             animation-name: circle;
             animation-duration: 5s;
             animation-timing-function: linear;
-            animation-iteration-count: infinite;
+            animation-iteration-count: 1;
         }
     }
 
@@ -308,7 +290,7 @@
             animation-name: circle;
             animation-duration: 5s;
             animation-timing-function: linear;
-            animation-iteration-count: infinite;
+            animation-iteration-count: 1;
         }
     }
 
@@ -445,7 +427,7 @@
             animation-duration: 3000ms;
             animation-timing-function: linear;
             animation-iteration-count: 1;
-            // animation-iteration-count: infinite;
+
         }
     }
 

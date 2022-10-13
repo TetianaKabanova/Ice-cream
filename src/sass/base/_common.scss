@@ -46,3 +46,11 @@ body {
 .cursor {
   cursor: url('../images/cursor.png') 12 12, pointer;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
