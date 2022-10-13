@@ -31,15 +31,15 @@
     
     @media screen and (min-width: 320px) {
         width: 280px;
-        height: 412px;
+        // min-height: 412px;
     }
     @media screen and (min-width: 768px) {
         width: 224px;
-        height: 528px;
+        // min-height: 528px;
         }
     @media screen and (min-width: 1200px) {
         width: 368px;
-        height: 538px;
+        // min-height: 538px;
         }
         
 }
@@ -96,7 +96,21 @@
         }
 }
 
+.address__location {
+    font-style: normal;
+    border-bottom: 1px solid var(--line-grey);
+
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+    }
+}
+
 .address__city {
+    font-style: normal;
     margin-bottom: 8px;    
     font-size: 12px;
     line-height: calc(22/12);
@@ -115,6 +129,7 @@
 }
 
 .address__map {
+    font-style: normal;
     color: var(--product-bg-brown);
 
     font-size: 12px;
@@ -215,7 +230,7 @@
 .address__button {
     display: flex;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 16px;
 
@@ -232,8 +247,8 @@
     }
 }
 
-.address__location,
-.address__franchise {
+.address__lctn,
+.address__frnchs {
     margin-left: 0px;
     margin-right: 0px;
 }
