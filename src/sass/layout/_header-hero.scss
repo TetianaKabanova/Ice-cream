@@ -4,10 +4,13 @@
     align-items: center;
     padding-top: 12px;
 }
+.logo {
+    width: 48px;
+}
 
 .logo__img {
     width: 48px;
-    height: 42px;
+    height: 44px;
 }
 
 .page-header__modal-btn {
@@ -18,7 +21,7 @@
     border-radius: 10px;
     background-color: var(--accent-color);
     transition: background-color var(--transition-dur-and-func);
-    cursor: pointer;
+    // cursor: pointer;
 
 
     font-weight: 600;
@@ -142,6 +145,15 @@
 }
 
 @media screen and (max-width: 767px) {
+    .logo {
+        width: 40px;
+    }
+    
+    .logo__img {
+        width: 40px;
+        height: 37px;
+    }
+    
     .page-header__modal-btn {
         display: none;
     }
@@ -440,7 +452,6 @@
             animation-duration: 3000ms;
             animation-timing-function: linear;
             animation-iteration-count: 1;
-            // animation-iteration-count: infinite;
         }
     }
 
