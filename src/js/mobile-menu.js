@@ -23,7 +23,12 @@
     if (e.target.nodeName === "A") {
       toggleMenu();
     }
+    if (e.target.nodeName === "BUTTON") {
+      toggleMenu();
+    }
   });
+
+
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
