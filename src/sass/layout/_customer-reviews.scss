@@ -1,13 +1,25 @@
+@media screen and (max-width: 480px) {
+    .cr__section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .swiper-slide-next,
+    .swiper-slide-prev,
+    .swiper-slide-duplicate-next {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
 .cr__section {
     position: relative;
     overflow: hidden;
 }
 
-.ice-cream__background {
-    position: absolute;
-    top: -80px;
-    left: 0;
-    z-index: -1;
+.swiper-container {
+    width: 100%;
 }
 
 .cr__container .swiper-pagination {
@@ -31,12 +43,8 @@
     background-color: transparent;
 }
 
-.cr__card {
-    cursor: pointer;
-}
-
 .cr__card-rectangle {
-    max-width: 280px;
+    width: 280px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 32px;
@@ -67,7 +75,7 @@
 
 @media screen and (min-width: 768px) {
     .cr__card-rectangle {
-        max-width: 705px;
+        width: 705px;
         margin-top: 28px;
         margin-bottom: 32px;
         padding: 29px 80px 28px;
@@ -87,7 +95,7 @@
 
 @media screen and (min-width: 1200px) {
     .cr__card-rectangle {
-        max-width: 968px;
+        width: 968px;
         margin-top: 32px;
         padding: 39px 74px 39px 73px;
     }
