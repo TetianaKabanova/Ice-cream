@@ -48,7 +48,6 @@
     border: none;
     background-color: transparent;
     padding: 0;
-    cursor: pointer;
     outline: none;
 }
 
@@ -192,7 +191,6 @@
     border: 1px solid var(--primary-bg-color);
     border-radius: 10px;
 
-    cursor: pointer;
     outline: none;
 
     &::placeholder {
@@ -225,7 +223,6 @@
     font-weight: 600;
     line-height: 1.21;
 
-    cursor: pointer;
     outline: none;
 
     transition: background var(--transition-dur-and-func), color var(--transition-dur-and-func);
