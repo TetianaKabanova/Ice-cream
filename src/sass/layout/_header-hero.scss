@@ -184,18 +184,6 @@
         background-position: bottom, 36% 300px, 51% 260px, 53% 330px, 40% 254px, 40% 180px;
         background-repeat: no-repeat;
         }
-    
-    @media screen and (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .hero-container {
-            background-image: url('../images/mobile/header-hero_points-mobile@2x.png'), url('../images/mobile/header-hero_icecream-eyes1-mob@2x.png'),
-                url('../images/mobile/header-hero_icecream-eyes2-mob@2x.png'),
-                url('../images/mobile/header-hero_icecream-eyes3-mob@2x.png'),
-                url('../images/mobile/header-hero_icecream-mobile@2x.png'),
-                url('../images/mobile/header-hero_icecream-shadow-mobile@2x.png');
-        }
-    }
 }
 
 @media screen and (min-width: 768px) {
