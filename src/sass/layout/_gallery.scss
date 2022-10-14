@@ -81,6 +81,7 @@
 
   @media screen and (max-width: 479px) {
     max-width: 279px;
+
     width: 100%;
   }
 
@@ -88,6 +89,7 @@
     margin-right: auto;
     margin-left: auto;
     width: 279px;
+
     max-width: 100%;
   }
   @media screen and (min-width: 768px) {
@@ -107,6 +109,7 @@
 
   @media screen and (max-width: 479px) {
     max-width: 279px;
+    height: 130px;
     width: 100%;
   }
 
@@ -114,6 +117,7 @@
     margin-right: auto;
     margin-left: auto;
     width: 279px;
+    height: 130px;
     max-width: 100%;
   }
   @media screen and (min-width: 768px) {
